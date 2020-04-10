@@ -44,3 +44,14 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+*.iml
+
+#*.xml
+
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
