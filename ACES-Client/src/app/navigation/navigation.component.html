@@ -1,0 +1,26 @@
+<div class="navigation-mother">
+
+  <div class="navigation-nav-element-wrapper" style="display: flex;">
+
+    <div class="navigation-title-space">
+      <div>
+        {{ appTitle }}
+      </div>
+    </div>
+
+    <div class="navigation-main-elements">
+
+      <div class="navigation-nav-element-wrapper">
+        <div *ngFor="let element of navElements; index as index">
+          <div [ngClass]="{'navigation-chosen': element['chosen']}"
+               class="navigation-nav-element"
+               (click)="setChosen(index)"
+               routerLink="{{ '/' + element.path }}">{{ element.name }}</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

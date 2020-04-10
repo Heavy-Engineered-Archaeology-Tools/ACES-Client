@@ -1,0 +1,47 @@
+@import '../../styles.scss';
+
+.navigation-mother {
+  background-color: $basic-rust;
+  height: 80px;
+}
+
+.navigation-title-space {
+  flex: 1;
+
+  height: 100%;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+
+.navigation-main-elements {
+  flex: 5;
+}
+
+.navigation-nav-element-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.navigation-nav-element {
+  outline:none;
+
+  align-items: center;
+  display: flex;
+
+  height: 100%;
+
+  font-family: Arial;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  padding: 0 10px 0 10px;
+}
+
+.navigation-chosen {
+  background-color: $basic-rust-light;
+}
